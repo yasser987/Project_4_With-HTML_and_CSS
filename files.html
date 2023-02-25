@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="mt-0 p-relative text-c">Elbanna</h3>
+        <ul>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="index.html"
+              ><i class="fa-solid fa-chart-bar fa-fw"></i
+              ><span class="fs-14 hide-mobile">Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="settings.html"
+              ><i class="fa-solid fa-gear"></i
+              ><span class="fs-14 hide-mobile">Settings</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="profile.html"
+              ><i class="fa-regular fa-user"></i
+              ><span class="fs-14 hide-mobile">Profile</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="projects.html"
+              ><i class="fa-solid fa-diagram-project"></i
+              ><span class="fs-14 hide-mobile">Projects</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="courses.html"
+              ><i class="fa-solid fa-user-graduate"></i
+              ><span class="fs-14 hide-mobile">Courses</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="friends.html"
+              ><i class="fa-solid fa-user-group"></i
+              ><span class="fs-14 hide-mobile">Friends</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="files.html"
+              ><i class="fa-regular fa-file"></i
+              ><span class="fs-14 hide-mobile">Files</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="plans.html"
+              ><i class="fa-regular fa-credit-card"></i
+              ><span class="fs-14 hide-mobile">Plans</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="header bg-white p-15 flex-between p-relative">
+          <div class="search p-relative">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              class="p-relative rad-6 border-ddd p-10 fs-13"
+              type="search"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="icon flex-between">
+            <span class="notification p-relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+              <input type="checkbox" />
+            </span>
+            <img src="images/profile.png" alt="" />
+          </div>
+          <div
+            class="notification-list p-absolute bg-white p-20 border-ddd rad-6"
+          >
+            <div class="head flex-between mb-20">
+              <h2>Notification</h2>
+              <p class="fs-13 c-blue">View All</p>
+            </div>
+            <div class="body">
+              <div class="not d-flex pt-10 pb-10 bord-bottom-ddd">
+                <div class="left mr-20"><img src="images/team-01.png" /></div>
+                <div class="right">
+                  <h2 class="fs-14 mb-10">Yasser</h2>
+                  <p class="fs-13 mb-10">Sent You A Message</p>
+                  <span class="fs-10 c-blue">2 Hour Ago</span>
+                </div>
+              </div>
+              <div class="not d-flex pt-10 pb-10 bord-bottom-ddd">
+                <div class="left mr-20"><img src="images/team-02.png" /></div>
+                <div class="right">
+                  <h2 class="fs-14 mb-10">Ahmed</h2>
+                  <p class="fs-13 mb-10">
+                    You Have A notification From Your Friend
+                  </p>
+                  <span class="fs-10 c-blue">3 Hour Ago</span>
+                </div>
+              </div>
+              <div class="not d-flex pt-10 pb-10">
+                <div class="left mr-20"><img src="images/team-05.png" /></div>
+                <div class="right">
+                  <h2 class="fs-14 mb-10">Ibrahim</h2>
+                  <p class="fs-13 mb-10">Sent You A Message</p>
+                  <span class="fs-10 c-blue">6 Hour Ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Head -->
+        <h1 class="p-relative">Files</h1>
+        <div class="files rad-6 d-flex gap-20 mr-20 ml-20">
+          <div class="content gap-20 d-grid f-1 block-mobile">
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+            <div class="file bg-white rad-6 pt-20 pr-20 pl-20">
+              <i class="fa-solid fa-download"></i>
+              <img class="w-100 d-block" src="images/pdf.svg" alt="" />
+              <p class="text-c mb-20">my-file.pdf</p>
+              <p class="pb-10 bord-bottom-ddd c-grey fs-15">Yasser Elbanna</p>
+              <div class="footer flex-between c-grey fs-14 mt-20">
+                <p>20/06/2020</p>
+                <p>5.5MB</p>
+              </div>
+            </div>
+          </div>
+          <div class="aside bg-white rad-6 p-20">
+            <p class="mb-20 text-c-mobile">Files Statistics</p>
+            <div class="line d-flex p-10 border-ddd rad-6 mb-10">
+              <img class="mr-10" src="images/pdf.svg" alt="" />
+              <div class="text flex-between f-1">
+                <div class="left">
+                  <p class="fs-14 mb-5">PDF Files</p>
+                  <p class="fs-14 c-grey">130</p>
+                </div>
+                <div class="right fs-14 c-grey">6.5GB</div>
+              </div>
+            </div>
+            <div class="line d-flex p-10 border-ddd rad-6 mb-10">
+              <img class="mr-10" src="images/eps.svg" alt="" />
+              <div class="text flex-between f-1">
+                <div class="left">
+                  <p class="fs-14 mb-5">Images</p>
+                  <p class="fs-14 c-grey">130</p>
+                </div>
+                <div class="right fs-14 c-grey">6.5GB</div>
+              </div>
+            </div>
+            <div class="line d-flex p-10 border-ddd rad-6 mb-10">
+              <img class="mr-10" src="images/word.svg" alt="" />
+              <div class="text flex-between f-1">
+                <div class="left">
+                  <p class="fs-14 mb-5">Word Files</p>
+                  <p class="fs-14 c-grey">130</p>
+                </div>
+                <div class="right fs-14 c-grey">6.5GB</div>
+              </div>
+            </div>
+            <div class="line d-flex p-10 border-ddd rad-6 mb-10">
+              <img class="mr-10" src="images/pdf.svg" alt="" />
+              <div class="text flex-between f-1">
+                <div class="left">
+                  <p class="fs-14 mb-5">PDF Files</p>
+                  <p class="fs-14 c-grey">130</p>
+                </div>
+                <div class="right fs-14 c-grey">6.5GB</div>
+              </div>
+            </div>
+            <div class="upload p-relative bg-blue c-white w-fit">Upload</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

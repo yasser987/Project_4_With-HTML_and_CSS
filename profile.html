@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="mt-0 p-relative text-c">Elbanna</h3>
+        <ul>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="index.html"
+              ><i class="fa-solid fa-chart-bar fa-fw"></i
+              ><span class="fs-14 hide-mobile">Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="settings.html"
+              ><i class="fa-solid fa-gear"></i
+              ><span class="fs-14 hide-mobile">Settings</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="active d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="profile.html"
+              ><i class="fa-regular fa-user"></i
+              ><span class="fs-14 hide-mobile">Profile</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="projects.html"
+              ><i class="fa-solid fa-diagram-project"></i
+              ><span class="fs-14 hide-mobile">Projects</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="courses.html"
+              ><i class="fa-solid fa-user-graduate"></i
+              ><span class="fs-14 hide-mobile">Courses</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="freinds.html"
+              ><i class="fa-solid fa-user-group"></i
+              ><span class="fs-14 hide-mobile">Friends</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="files.html"
+              ><i class="fa-regular fa-file"></i
+              ><span class="fs-14 hide-mobile">Files</span></a
+            >
+          </li>
+          <li>
+            <a
+              class="d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
+              href="plans.html"
+              ><i class="fa-regular fa-credit-card"></i
+              ><span class="fs-14 hide-mobile">Plans</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="header bg-white p-15 flex-between p-relative">
+          <div class="search p-relative">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              class="p-relative rad-6 border-ddd p-10 fs-13"
+              type="search"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="icon flex-between">
+            <span class="notification p-relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+              <input type="checkbox" />
+            </span>
+            <img src="images/profile.png" alt="" />
+          </div>
+          <div
+            class="notification-list p-absolute bg-white p-20 border-ddd rad-6"
+          >
+            <div class="head flex-between mb-20">
+              <h2>Notification</h2>
+              <p class="fs-13 c-blue">View All</p>
+            </div>
+            <div class="body">
+              <div class="not d-flex pt-10 pb-10 bord-bottom-ddd">
+                <div class="left mr-20"><img src="images/team-01.png" /></div>
+                <div class="right">
+                  <h2 class="fs-14 mb-10">Yasser</h2>
+                  <p class="fs-13 mb-10">Sent You A Message</p>
+                  <span class="fs-10 c-blue">2 Hour Ago</span>
+                </div>
+              </div>
+              <div class="not d-flex pt-10 pb-10 bord-bottom-ddd">
+                <div class="left mr-20"><img src="images/team-02.png" /></div>
+                <div class="right">
+                  <h2 class="fs-14 mb-10">Ahmed</h2>
+                  <p class="fs-13 mb-10">
+                    You Have A notification From Your Friend
+                  </p>
+                  <span class="fs-10 c-blue">3 Hour Ago</span>
+                </div>
+              </div>
+              <div class="not d-flex pt-10 pb-10">
+                <div class="left mr-20"><img src="images/team-05.png" /></div>
+                <div class="right">
+                  <h2 class="fs-14 mb-10">Ibrahim</h2>
+                  <p class="fs-13 mb-10">Sent You A Message</p>
+                  <span class="fs-10 c-blue">6 Hour Ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Head -->
+        <h1 class="p-relative">Profile</h1>
+        <!-- Start Profile Intor -->
+        <div class="profile-intro bg-white rad-6 m-20 d-flex align-center">
+          <div class="left d-flex f-col text-c">
+            <img class="" src="images/profile.png" alt="" />
+            <h3 class="mb-10">Yasser Elbanna</h3>
+            <p class="mb-10 c-grey fs-15">Level 20</p>
+            <p class="progress">
+              <span class="d-block h-full" style="width: 70%"></span>
+            </p>
+            <div class="rate mb-10">
+              <i class="fa-solid fa-star mr-5 c-orange fs-13"></i
+              ><i class="fa-solid fa-star mr-5 c-orange fs-13"></i
+              ><i class="fa-solid fa-star mr-5 c-orange fs-13"></i
+              ><i class="fa-solid fa-star mr-5 c-orange fs-13"></i
+              ><i class="fa-solid fa-star mr-5 c-orange fs-13"></i>
+            </div>
+            <span class="fs-13 c-grey">550 Rating</span>
+          </div>
+          <div class="right f-1">
+            <div class="line bord-bottom-ddd">
+              <p class="fs-15 c-grey">General Information</p>
+              <div class="user-data">
+                <p class="fs-14 c-grey">
+                  Full Name:<span class="c-black">Yasser Elbanna</span>
+                </p>
+                <p class="fs-14 c-grey">
+                  Gender:<span class="c-black">Male</span>
+                </p>
+                <p class="fs-14 c-grey">
+                  Country:<span class="c-black">Egypt</span>
+                </p>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <div class="line bord-bottom-ddd">
+              <p class="fs-15 c-grey">Personal Information</p>
+              <div class="user-data">
+                <p class="fs-14 c-grey">
+                  Email:<span class="c-black">o@nn.sa</span>
+                </p>
+                <p class="fs-14 c-grey">
+                  Phone:<span class="c-black">019123456789</span>
+                </p>
+                <p class="fs-14 c-grey">
+                  Date Of Birth:<span class="c-black">25/10/1982</span>
+                </p>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <div class="line bord-bottom-ddd">
+              <p class="fs-15 c-grey">Job Information</p>
+              <div class="user-data">
+                <p class="fs-14 c-grey">
+                  Title:<span class="c-black">Full Stack Developer</span>
+                </p>
+                <p class="fs-14 c-grey">
+                  Programming Language:<span class="c-black">Python</span>
+                </p>
+                <p class="fs-14 c-grey">
+                  Years Of Experience:<span class="c-black">15+</span>
+                </p>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <div class="line">
+              <p class="fs-15 c-grey">Billing Information</p>
+              <div class="user-data">
+                <p class="fs-14 c-grey">
+                  Payment Method:<span class="c-black">Paypal</span>
+                </p>
+                <p class="fs-14 c-grey">
+                  Email:<span class="c-black">email@website.com</span>
+                </p>
+                <p class="fs-14 c-grey">
+                  Subscription:<span class="c-black"> Monthly</span>
+                </p>
+                <label>
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Profile Intor -->
+        <!-- Start Profile Widgets -->
+        <div class="profile-widgets d-flex m-20 block-mobile col-mobile">
+          <div class="skills p-20 bg-white mr-20 rad-6 block-mobile">
+            <div class="head mb-20">
+              <h2 class="mt-0 mb-10">My Skills</h2>
+              <p class="c-grey fs-15">Complete Skills List</p>
+            </div>
+            <ul>
+              <li class="d-flex text-c-mobile"><span>HTML</span><span>Pugjs</span><span>HAML</span></li>
+              <li class="d-flex text-c-mobile"><span>CSS</span><span>SASS</span><span>Stylus</span></li>
+              <li class="d-flex text-c-mobile"><span>JavaScript</span><span>TypeScript</span></li>
+              <li class="d-flex text-c-mobile"><span>Vuejs</span><span>Reactjs</span></li>
+              <li class="d-flex text-c-mobile"><span>Jest</span><span>Jasmine</span></li>
+              <li class="d-flex text-c-mobile"><span>PHP</span><span>Laravel</span></li>
+              <li class="d-flex text-c-mobile"><span>Python</span><span>Django</span></li>
+            </ul>
+          </div>
+          <div class="activities p-20 bg-white rad-6">
+            <div class="head mb-20">
+              <h2 class="mt-0 mb-10">Latest Activities</h2>
+              <p class="c-grey fs-15">Latest Activities Done By The User</p>
+            </div>
+            <div class="activity d-flex pt-20 pb-20 bord-bottom-ddd block-mobile col-mobile text-c-mobile">
+              <div class="icon mr-20">
+                <i class="fa-solid fa-gift"></i>
+              </div>
+              <div class="text flex-between f-1 col-mobile">
+                <div class="left">
+                  <p class="mb-10 m-10-mobile">Store</p>
+                  <p class="c-grey m-10-mobile">Bought The Mastering Python Course</p>
+                </div>
+                <div class="right">
+                  <p class="mb-10 m-10-mobile">18:10</p>
+                  <p class="c-grey">Yesterday</p>
+                </div>
+              </div>
+            </div>
+            <div class="activity d-flex pt-20 pb-20 bord-bottom-ddd block-mobile col-mobile text-c-mobile">
+              <div class="icon mr-20">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="text flex-between f-1 col-mobile">
+                <div class="left">
+                  <p class="mb-10 m-10-mobile">Store</p>
+                  <p class="c-grey m-10-mobile">Bought The Mastering Python Course</p>
+                </div>
+                <div class="right">
+                  <p class="mb-10 m-10-mobile">18:10</p>
+                  <p class="c-grey">Yesterday</p>
+                </div>
+              </div>
+            </div>
+            <div class="activity d-flex pt-20 pb-20 bord-bottom-ddd block-mobile col-mobile text-c-mobile">
+              <div class="icon mr-20">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="text flex-between f-1 col-mobile">
+                <div class="left">
+                  <p class="mb-10 m-10-mobile">Store</p>
+                  <p class="c-grey m-10-mobile">Bought The Mastering Python Course</p>
+                </div>
+                <div class="right">
+                  <p class="mb-10 m-10-mobile">18:10</p>
+                  <p class="c-grey">Yesterday</p>
+                </div>
+              </div>
+            </div>
+            <div class="activity d-flex pt-20 block-mobile col-mobile text-c-mobile">
+              <div class="icon mr-20">
+                <i class="fa-solid fa-gift"></i>
+              </div>
+              <div class="text flex-between f-1 col-mobile">
+                <div class="left">
+                  <p class="mb-10 m-10-mobile">Store</p>
+                  <p class="c-grey m-10-mobile">Bought The Mastering Python Course</p>
+                </div>
+                <div class="right">
+                  <p class="mb-10 m-10-mobile">18:10</p>
+                  <p class="c-grey">Yesterday</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Profile Widgets -->
+      </div>
+    </div>
+  </body>
+</html>
