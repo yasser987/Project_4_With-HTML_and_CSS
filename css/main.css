@@ -1272,6 +1272,9 @@ a {
   .files {
     flex-direction: column-reverse;
   }
+  .files .file {
+    margin-bottom: 20px;
+  }
 }
 .file > img {
   width: 70px;
@@ -1318,7 +1321,7 @@ a {
 }
 @media (max-width: 767px) {
   .files .aside {
-    width: 100%;
+    min-width: 100%;
   }
 }
 .files .aside > p:first-child {
@@ -1339,10 +1342,21 @@ a {
 .plans {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
-.plans .plan {
-  min-width: 500px;
-  max-width: 100%;
+
+@media (max-width: 992px) {
+  .plans {
+    display: block;
+    max-width: 100%;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .plan {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 }
+
 .plans .plan:nth-child(1) .header {
   background-color: var(--green-color);
   border: 3px solid white;
@@ -1357,6 +1371,14 @@ a {
   border: 3px solid white;
   background-color: var(--orange-color);
   outline: 3px solid var(--orange-color);
+}
+@media (max-width: 992px) {
+  .plans .plan .header {
+    padding: 5px;
+  }
+  .plans .plan .header p:nth-child(2) {
+    font-size: 25px;
+  }
 }
 .plan .header p:nth-child(1) {
   font-size: 20px;
@@ -1375,6 +1397,12 @@ a {
 }
 .plans .plan ul li p {
   margin-left: 30px;
+}
+@media (max-width: 992px) {
+  .plans .plan ul li p {
+    font-size: 12px;
+    margin-left: 25px;
+  }
 }
 .plans .plan:nth-child(1) ul li:nth-child(1):before,
 .plans .plan:nth-child(1) ul li:nth-child(2):before,
