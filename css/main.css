@@ -1147,7 +1147,12 @@ a {
   border-bottom: 1px solid #ddd;
   justify-content: flex-end;
 }
-.skills p {
+@media (max-width: 767px) {
+  .skills .head > p {
+    font-size: 14px;
+  }
+}
+.skills > ul p {
   background-color: rgb(221 221 221 / 50%);
 }
 @media (max-width: 767px) {
